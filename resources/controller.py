@@ -32,7 +32,7 @@ def patch_pod(namespace, node_name, pod_name):
     except Exception as e:
         print(f"❌ Failed to patch Pod {pod_name}: {str(e)}")
 
-NAMESPACE = "linstor-test"
+NAMESPACE = "linstor-test-2"
 
 def watch_scheduled_pods():
     """Watches for Pods that get scheduled and updates their PVC reference"""
