@@ -23,7 +23,7 @@ def patch_pod(namespace, node_name, pod_name):
                             "name": "log-volume"
                         }
                     ]
-                }            
+                },            
             "volumes": [
                 {
                     "name": "log-volume",
