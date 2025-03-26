@@ -15,6 +15,15 @@ def patch_pod(namespace, node_name, pod_name):
             }
         },
         "spec": {
+            "containers": 
+                {
+                    "volumeMounts":[
+                        {
+                            "mountPath": "/app/log",
+                            "name": "log-volume"
+                        }
+                    ]
+                }            
             "volumes": [
                 {
                     "name": "log-volume",
